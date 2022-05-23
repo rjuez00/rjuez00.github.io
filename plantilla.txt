@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--========== BOX ICONS ==========-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <!--========== CSS ==========-->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <title>Rodrigo Juez Hernández Resume</title>
+</head>
+
+<body onload=todayDate()>
+  <!--========== HEADER ==========-->
+  <header class="l-header" id="header">
+    <nav class="nav bd-container">
+      <a href="#" class="nav__logo">Rodrigo Juez Hernández</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">
+              <i class="bx bx-home nav__icon"></i>Home
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#professional_skills" class="nav__link">
+              <i class="bx bx-receipt nav__icon"></i>Professional Skills
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#others" class="nav__link">
+              <i class="bx bx-note nav__icon"></i>Others
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#foreign_languages" class="nav__link">
+              <i class="bx bx-conversation nav__icon"></i>Foreign Languages
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#hobbies" class="nav__link">
+              <i class="bx bx-camera nav__icon"></i>Hobbies
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">
+              <i class="bx bx-mail-send nav__icon"></i>Contact
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#social" class="nav__link">
+              <i class="bx bx-paper-plane nav__icon"></i>Social
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#experience" class="nav__link">
+              <i class="bx bx-briefcase-alt nav__icon"></i>Work Experience
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#education" class="nav__link">
+              <i class="bx bx-book nav__icon"></i>Education
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#awards" class="nav__link">
+              <i class="bx bx-award nav__icon"></i>Awards
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">
+              <i class='bx bx-code-block nav__icon'></i>Projects
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-grid-alt nav__icon"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main bd-container">
+    <!-- All elements within this div, is generated in PDF -->
+    <div class="resume" id="area-cv">
+      <div class="resume__left">
+        <!--========== HOME ==========-->
+        <section class="home" id="home">
+          <div class="home__container section bd-grid">
+            <div class="home__data bd-grid">
+              <img src="assets/images/portrait.jpg" class="home__img">
+
+              <h1 class="home__title">Rodrigo Juez Hernández</h1>
+              <h3 class="home__profession">Software Engineer</h3>
+
+              <!-- Button to download CV saved in the pdf folder. Available -->
+              <div>
+                <a download="Rodrigo_Juez_Hernandez_Resume.pdf" onclick="downloadResume();"
+                  class="home__button-movil">Download</a>
+              </div>
+            </div>
+
+            <div class="home__address bd-grid">
+              <span class="home__information">
+                <i class="bx bx-map home__icon"></i> Milano, Italy
+              </span>
+            </div>
+
+          </div>
+          <!-- Theme change button -->
+          <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
+
+          <!-- Button to generate and download the pdf. Available for desktop. -->
+          <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>
+        </section>
+
+        <!--========== Professional Skills ==========-->
+        <section class="professional_skills" id="professional_skills">
+          <h2 class="left-section-title">Professional Skills</h2>
+          <div class="professional__skills__container bd-grid">
+            <ul>
+              <li>
+                <span></span> C/C++
+              </li>
+              <li>
+                <span></span> Python
+              </li>
+              <li>
+                <span></span> Bash
+              </li>
+              <li>
+                <span></span> Flutter
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!--========== Others ==========-->
+        <section class="profile section" id="others">
+          <h2 class="left-section-title">Others</h2>
+          <div class="others__container bd-grid">
+            <ul>
+              <li>
+                <span></span> Intel AI Summer School Certificate
+              </li>
+              <li>
+                <span></span> CMake
+              </li>
+              <li>
+                <span></span> Deep Learning
+              </li>
+              <li>
+                <span></span> Digital Image Processing
+              </li>
+              <li>
+                <span></span> Linux and Windows OS
+              </li>
+              <li>
+                <span></span> Natural Language Processing
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!--========== Foreign Languages ==========-->
+        <section class="profile section" id="foreign_languages">
+          <h2 class="left-section-title">Foreign Languages</h2>
+          <div class="languages__content bd-grid">
+            <ul class="languages__data">
+              <li>
+                <span></span> English: C1, TOEFL iBT: 107
+              </li>
+              <li>
+                <span></span> German: B2
+              </li>
+              <li>
+                <span></span> Spanish: B1
+              </li>
+              <li>
+                <span></span> Italian: A2
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!--========== Hobbies ==========-->
+        <section class="profile section" id="hobbies">
+          <h2 class="left-section-title">Hobbies</h2>
+          <div class="hobbies__content bd-grid">
+            <ul class="hobbies__data">
+              <li>
+                <span></span> Filmmaking
+              </li>
+              <li>
+                <span></span> Street Dance
+              </li>
+              <li>
+                <span></span> Piano
+              </li>
+              <li>
+                <span></span> Football
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!--========== Contact ==========-->
+        <section class="profile section" id="contact">
+          <h2 class="left-section-title">Contact</h2>
+
+          <div class="contact__content bd-grid">
+            <div class="home__address bd-grid">
+              <span class="home__information">
+                <i class="bx bx-envelope home__icon"></i>
+                <a href="mailto:mail" target="_blank"
+                  class="contact__link">mail</a>
+                </i>
+              </span>
+            </div>
+
+            <!-- <div class="home__address bd-grid"> -->
+            <!-- <span class="home__information"> -->
+            <!-- <i class="bx bx-phone home__icon"></i> +XX XXX XXX XXX -->
+            <!-- </span> -->
+            <!-- </div> -->
+          </div>
+        </section>
+
+        <!--========== SOCIAL ==========-->
+        <section class="social section" id="social">
+          <h2 class="left-section-title">SOCIAL</h2>
+
+          <div class="social__container bd-grid">
+            <a href="link" target="_blank" class="social__link">
+              <i class='bx bxl-linkedin-square social__icon'></i> Rodrigo Juez Hernández
+            </a>
+            <a href="https://github.com/rjuez00" target="_blank" class="social__link">
+              <i class='bx bxl-github social__icon'></i> rjuez00
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <div class="resume__right">
+        <!--========== Work Experience ==========-->
+        <section class="experience section" id="experience">
+          <h2 class="section-title">Work Experience</h2>
+
+          <div class="experience__container bd-grid">
+            <div class="experience__content">
+              <div class="experience__time">
+                <span class="experience__rounder"></span>
+                <span class="experience__line"></span>
+              </div>
+
+              <div class="experience__data bd-grid">
+                <h3 class="experience__title"><span style="color: var(--text-color);">Software Engineer |</span> The
+                  PowerVR Graphics & Simulation Team</h3>
+                <span class="experience__company" style="color: var(--title-color);">Imagination Technologies <span
+                    style="color: var(--text-color);"> | Apr 2021 - Sep 2021</span></span>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Designing and maintaining high performance GPU simulation models
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Providing feedback into latest chip designs
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Analyzing and optimizing the performance of the platform
+                  simulation
+                </li>
+              </div>
+            </div>
+
+            <div class="experience__content">
+              <div class="experience__time">
+                <span class="experience__rounder"></span>
+                <span class="experience__line"></span>
+              </div>
+
+              <div class="experience__data bd-grid">
+                <h3 class="experience__title"><span style="color: var(--text-color);">Software Developer |</span>
+                  Baseband</h3>
+                <span class="experience__company"><span style="color: var(--title-color);">Nokia</span> | Jul 2020 - Mar
+                  2021</span>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Worked on implementation of the baseband service for new 5G
+                  solutions
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Took part in preparation of a software platform for radio
+                  technologies
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Acquired a thorough understanding of the cellular network
+                  architecture and the base transceiver station infrastructure
+                  simulation
+                </li>
+              </div>
+            </div>
+
+            <div class="experience__content">
+              <div class="experience__time">
+                <span class="experience__rounder"></span>
+                <!-- <span class="experience__line"></span> -->
+              </div>
+
+              <div class="experience__data bd-grid">
+                <h3 class="experience__title"><span style="color: var(--text-color);">Software Development Intern
+                    |</span> Networking Division</h3>
+                <span class="experience__company"><span style="color: var(--title-color);">Intel Corporation</span> |
+                  Jul 2019 - Jul 2020</span>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Worked on drivers' development for new SmartNIC solutions
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Gained experience in unit, component and integration
+                  testing
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Improved Linux system administration and management
+                  skills
+                </li>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--========== Education ==========-->
+        <section class="certificate section" id="education">
+          <h2 class="section-title">Education</h2>
+
+          <div class="certificate__container bd-grid">
+            <div class="certificate__content">
+              <h3 class="certificate__title">Polytechnic University of Milan <span style="color: var(--text-color);">|
+                  Double Degree | Sep 2021 - Now</span></h3>
+              <p class="certificate__description">Master in Computer Science and Engineering, Faculty of Electronics,
+                Information and Bioengineering</p>
+            </div>
+
+            <div class="certificate__content">
+              <h3 class="certificate__title">Wrocław University of Science and Technology <span
+                  style="color: var(--text-color);">| Mar 2021 - Now</span></h3>
+              <p class="certificate__description">Master in Computer Science, Faculty of Information and Communication
+                Technology</p>
+            </div>
+
+            <div class="certificate__content">
+              <h3 class="certificate__title">Wrocław University of Science and Technology <span
+                  style="color: var(--text-color);">| Oct 2017 - Jan 2021</span></h3>
+              <p class="certificate__description">Bachelor in Computer Science, specialization: Applied Computer
+                Engineering in Medicine, Faculty of Electronics</p>
+            </div>
+
+            <div class="certificate__content">
+              <h3 class="certificate__title">Autonomous University of Madrid <span style="color: var(--text-color);">|
+                  Erasmus+ | Sep 2018 - Jun 2019</span></h3>
+              <p class="certificate__description">Computer Science, Faculty of UAM Polytechnic School</p>
+            </div>
+          </div>
+        </section>
+
+        <!--========== Awards ==========-->
+        <section class="certificate section" id="awards">
+          <h2 class="section-title">Awards</h2>
+
+          <div class="certificate__container bd-grid">
+            <div class="certificate__content">
+              <h3 class="certificate__title">Wrocław University of Science and Technology</h3>
+              <li class="skills__name">
+                <span class="skills__circle"></span> <span style="color: var(--title-color);">Rector Scholarship for The
+                  Best Students</span>&nbsp| Mar 2021 - Feb 2022
+              <li class="inner__list"> 3rd highest semester GPA among all Computer Science
+                students
+              </li>
+              </li>
+              <li class="skills__name">
+                <span class="skills__circle"></span> </span> <span style="color: var(--title-color);">Rector Scholarship
+                  for The Best Students</span>&nbsp| Oct 2020 - Feb 2021
+              </li>
+              <li class="skills__name">
+                <span class="skills__circle"></span> </span> <span style="color: var(--title-color);">Rector Scholarship
+                  for The Best Students</span>&nbsp| Oct 2018 - Jun 2019
+              </li>
+            </div>
+          </div>
+        </section>
+
+        <!--========== Projects ==========-->
+        <section class="certificate section" id="projects">
+          <h2 class="section-title">Projects</h2>
+
+          <div class="certificate__container bd-grid">
+            <div class="certificate__content">
+              <h3 class="certificate__title">The Hairdresser's <span style="color: var(--text-color);">| C++,
+                  std::thread, ncurses</span></h3>
+              <p class="certificate__description">A C++ multithreaded program graphically representing, with the help of
+                the ncurses library, a working day in a two competitive hairdressing salons. It uses std::thread.</p>
+            </div>
+
+            <div class="certificate__content">
+              <h3 class="certificate__title">Story Maker <span style="color: var(--text-color);">| Dart, Flutter,
+                  FFmpeg</span></h3>
+              <p class="certificate__description">A story making mobile app written for both iOS and Android devices. It
+                generates a short video from files indicated by the user by automatically selecting the best moments
+                from them.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer>
+      &copy; <span id="date"></span>Rodrigo Juez Hernández
+    </footer>
+  </main>
+
+  <!--========== SCROLL TOP ==========-->
+  <a href="#" class="scrolltop" id="scroll-top">
+    <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+  </a>
+
+  <!--========== MAIN JS ==========-->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

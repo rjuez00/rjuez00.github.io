@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--========== BOX ICONS ==========-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <!--========== CSS ==========-->
+  <link rel="stylesheet" href="assets/styles.css">
+
+  <title>Rodrigo Juez Hernández Resume</title>
+</head>
+
+<body onload=todayDate()>
+  <!--========== HEADER ==========-->
+  <header class="l-header" id="header">
+    <nav class="nav bd-container">
+      <a href="#" class="nav__logo">Rodrigo Juez Hernández</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">
+              <i class="bx bx-home nav__icon"></i>Home
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#professional_skills" class="nav__link">
+              <i class="bx bx-receipt nav__icon"></i>Professional Skills
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#others" class="nav__link">
+              <i class="bx bx-note nav__icon"></i>Others
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#foreign_languages" class="nav__link">
+              <i class="bx bx-conversation nav__icon"></i>Foreign Languages
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#hobbies" class="nav__link">
+              <i class="bx bx-camera nav__icon"></i>Hobbies
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">
+              <i class="bx bx-mail-send nav__icon"></i>Contact
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#social" class="nav__link">
+              <i class="bx bx-paper-plane nav__icon"></i>Social
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#experience" class="nav__link">
+              <i class="bx bx-briefcase-alt nav__icon"></i>Work Experience
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#education" class="nav__link">
+              <i class="bx bx-book nav__icon"></i>Education
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#awards" class="nav__link">
+              <i class="bx bx-award nav__icon"></i>Awards
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-grid-alt nav__icon"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main bd-container">
+    <!-- All elements within this div, is generated in PDF -->
+    <div class="resume" id="area-cv">
+      <div class="resume__left">
+        <!--========== HOME ==========-->
+        <section class="home" id="home">
+          <div class="home__container section bd-grid">
+            <div class="home__data bd-grid">
+              <img src="assets/portrait.png" class="home__img">
+
+              <h1 class="home__title">Rodrigo Juez Hernández</h1>
+              <h3 class="home__profession">Computer Science Engineering</h3>
+
+              <!-- Button to download CV saved in the pdf folder. Available -->
+              <div>
+                <a download="Rodrigo_Juez_Hernandez_Resume.pdf" onclick="downloadResume();"
+                  class="home__button-movil">Download</a>
+              </div>
+            </div>
+
+            <div class="home__address bd-grid">
+              <span class="home__information">
+                <i class="bx bx-map home__icon"></i> Uppsala, Sweden
+              </span>
+            </div>
+
+          </div>
+          <!-- Theme change button -->
+          <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
+
+          <!-- Button to generate and download the pdf. Available for desktop. -->
+          <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>
+        </section>
+
+        <!--========== Professional Skills ==========-->
+        <section class="professional_skills" id="professional_skills">
+          <h2 class="left-section-title">Professional Skills</h2>
+          <div class="professional__skills__container bd-grid">
+            <ul>
+              <li>
+                <span></span> C/C++, Python, Java, ADA, Prolog
+              </li>
+
+              <li>
+                <span></span> RegEx, SQL (PostgreSQL, MySQL)
+              </li>
+
+              <li>
+                <span></span> VHDL, assembly (8086, MIPS)
+              </li>
+              
+              <li>
+                <span></span> Bash, Windows Batch
+              </li>
+
+            </ul>
+          </div>
+        </section>
+
+        <!--========== Others ==========-->
+        <section class="profile section" id="others">
+          <h2 class="left-section-title">Others</h2>
+          <div class="others__container bd-grid">
+            <ul>   
+              <li>
+                <span></span> <b>Driver's License</b>
+              </li>
+              <li>
+                <span></span> Deep Learning (Pytorch, tf2)
+              </li>
+              <li>
+                <span></span> Digital Image Processing
+              </li>
+              <li>
+                <span></span> Linux and Windows OS
+              </li>
+              <li>
+                <span></span> Natural Language Processing (Flair, Huggingface's Transformers, tf2)
+              </li>
+
+              
+            </ul>
+          </div>
+        </section>
+
+        <!--========== Foreign Languages ==========-->
+        <section class="profile section" id="foreign_languages">
+          <h2 class="left-section-title">Foreign Languages</h2>
+          <div class="languages__content bd-grid">
+            <ul class="languages__data">
+              <li>
+                <span></span> English: C2 CEFR
+              </li>
+              <li>
+                <span></span> Spanish: Native
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!--========== Hobbies ==========-->
+        <section class="profile section" id="hobbies">
+          <h2 class="left-section-title">Hobbies</h2>
+          <div class="hobbies__content bd-grid">
+            <ul class="hobbies__data">
+              <li>
+                <span></span> Motorsports and Cars
+              </li>
+              <li>
+                <span></span> Films and Photography
+              </li>
+              <li>
+                <span></span> Cycling
+              </li>
+              <li>
+                <span></span> Technology
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!--========== Contact ==========-->
+        <section class="profile section" id="contact">
+          <h2 class="left-section-title">Contact</h2>
+
+          <div class="contact__content bd-grid">
+            <div class="home__address bd-grid">
+              <span class="home__information">
+                <i class="bx bx-envelope home__icon"></i>
+                <a href="mailto:rjuez00@gmail.com" target="_blank"
+                  class="contact__link">rjuez00@gmail.com</a>
+                </i>
+              </span>
+            </div>
+
+            <!-- <div class="home__address bd-grid"> -->
+            <!-- <span class="home__information"> -->
+            <!-- <i class="bx bx-phone home__icon"></i> +XX XXX XXX XXX -->
+            <!-- </span> -->
+            <!-- </div> -->
+          </div>
+        </section>
+
+        <!--========== SOCIAL ==========-->
+        <section class="social section" id="social">
+          <h2 class="left-section-title">SOCIAL</h2>
+
+          <div class="social__container bd-grid">
+            <a href="https://www.linkedin.com/in/rjuezhdez/" target="_blank" class="social__link">
+              <i class='bx bxl-linkedin-square social__icon'></i> Rodrigo Juez Hernández
+            </a>
+            <a href="https://github.com/rjuez00" target="_blank" class="social__link">
+              <i class='bx bxl-github social__icon'></i> rjuez00
+            </a>
+            <a href="https://rjuez00.github.io" target="_blank" class="social__link">
+              <i class='bx bxl-edge social__icon'></i> rjuez00.github.io personal page.
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <div class="resume__right">
+        <!--========== Work Experience ==========-->
+        <section class="experience section" id="experience">
+          <h2 class="section-title">Work Experience</h2>
+          
+          <div class="experience__content">
+            <div class="experience__time">
+              <span class="experience__rounder"></span>
+              <!-- <span class="experience__line"></span> -->
+            </div>
+
+            <div class="experience__data bd-grid">
+              <h3 class="experience__title"><span style="color: var(--text-color);">Develop and research in NLP |</span>
+                Oficina Nacional de Delitos de Odio | Part-time</h3>
+              <span class="experience__company"><span style="color: var(--title-color);">Ministerio del Interior, Goverment of Spain 🇪🇸</span> |
+                July 2021 - Now</span>
+                Developing a platform to geoparse, geolocalize, tabulate and deidenitfy police reports. I used RegEx and NLP-NER models to extract data from raw text in PDFs.
+
+                <br>I've used Huggingface's transformers, FlairNLP BiLSTM+CRF, BiGRU+CRF models and embeddings, programmed them in Tensorflow 2 too. ReGex rules were developed to extract regular entities and then the interface is being developed in Python. Google API for Maps and OpenStreetMaps Overpass API are used to show a map of the streets extracted, with a summary per street of near amenities.
+
+                <br>Then an UI tool was developed using PyQt5, and an installer using pyinstaller and Inno Setup. This way non-technical people can use state-of-the-art models to anonimize and extract entities easily, using the installer and the UI.
+            </div>
+          </div>
+  
+        </section>
+
+        <!--========== Education ==========-->
+        <section class="certificate section" id="education">
+          <h2 class="section-title">Education</h2>
+
+          <div class="certificate__container bd-grid">
+            <div class="certificate__content">
+              <h3 class="certificate__title">Uppsala University, Sweden <span style="color: var(--text-color);">| Sep 2022 - Now</span></h3>
+              <p class="certificate__description"><b>Master's Programme in Computer Science</b>, Department of Information Technology</p>
+            </div>
+            
+            <div class="certificate__content">
+              <h3 class="certificate__title">Universidad Autónoma de Madrid <span
+                  style="color: var(--text-color);">| Sep 2018 - Jul 2022</span></h3>
+              <p class="certificate__description"><b>Bachelor in Computer Science Engineering</b>, <i>8 honorific mentions</i> </p>
+            </div>
+            
+            <div class="certificate__content">
+              <h3 class="certificate__title">Conservatorio Arturo Soria <span
+                  style="color: var(--text-color);">| 2010 - 2014</span></h3>
+              <p class="certificate__description"><b>Elementary Piano</b>, which helped me not only with music, but to understand how to organize and face stage.</p>
+            </div>
+
+            <div class="certificate__content">
+              <h3 class="certificate__title">Coursera <span
+                  style="color: var(--text-color);">| University of Michigan | 2020</span></h3>
+              <p class="certificate__description">
+                <i><ul>
+                    <li><a href="https://www.coursera.org/account/accomplishments/certificate/HEC53G7X88VR">Applied Machine Learning in Python</a></li>
+                    <li><a href="https://www.coursera.org/account/accomplishments/certificate/JZ32EGSQR25G">Applied Plotting, Charting & Data Representation in Python</a></li>
+                    <li><a href="https://www.coursera.org/account/accomplishments/certificate/YH9N8FTHP2V6">Introduction to Data Science in Python</a></li>
+                  </ul></i>  
+
+              </p>
+            </div>
+          </div>
+
+          
+
+        </section>
+
+        <!--========== Awards ==========-->
+        <section class="certificate section" id="awards">
+          <h2 class="section-title">Awards</h2>
+
+          <div class="certificate__container bd-grid">
+            <div class="certificate__content">
+              <h3 class="certificate__title"><i>Comunidad de Madrid Beca de Excelencia</i></h3>
+              <li class="skills__name">
+                <span class="skills__circle"></span> <span style="color: var(--title-color);">Excellence Scholarship <i>Comunidad de Madrid</i> for my 3rd year marks</span>&nbsp| 2021
+              <li class="inner__list"> Scholarship awarded to the highest university grades among Madrid universities. This is the last one received from <i>Comunidad de Madrid</i>, as a requirement for receiving scholarship is being enlisted in a Madrid university, so I can't request it in my 4th year marks (my last year).
+              </li>
+              </li>
+              <li class="skills__name">
+                <span class="skills__circle"></span> </span> <span style="color: var(--title-color);">Excellence Scholarship for my 2nd year marks</span>&nbsp| 2020
+              <li class="skills__name">
+                <span class="skills__circle"></span> </span> <span style="color: var(--title-color);">Excellence Scholarship for my 1st year marks</span>&nbsp| 2019
+              </li>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+  </main>
+
+  <!--========== SCROLL TOP ==========-->
+  <a href="#" class="scrolltop" id="scroll-top">
+    <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+  </a>
+
+  <!--========== MAIN JS ==========-->
+  <script src="assets/main.js"></script>
+</body>
+
+</html>
