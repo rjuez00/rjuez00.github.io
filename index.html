@@ -11,7 +11,7 @@
   <!--========== CSS ==========-->
   <link rel="stylesheet" href="assets/styles.css">
 
-  <title>Rodrigo Juez Hernández Resume</title>
+  <title>Rodrigo Juez Hernández | Senior Software Engineer</title>
 </head>
 
 <body onload=todayDate()>
@@ -101,7 +101,7 @@
               <img src="assets/portrait.png" class="home__img">
 
               <h1 class="home__title">Rodrigo Juez Hernández</h1>
-              <h3 class="home__profession">Computer Science Engineering</h3>
+              <h3 class="home__profession">Senior Software Engineer</h3>
 
               <!-- Button to download CV saved in the pdf folder. Available -->
               <div>
@@ -112,7 +112,7 @@
 
             <div class="home__address bd-grid">
               <span class="home__information">
-                <i class="bx bx-map home__icon"></i> Uppsala, Sweden
+                <i class="bx bx-map home__icon"></i> Stockholm, Sweden
               </span>
             </div>
 
@@ -130,19 +130,19 @@
           <div class="professional__skills__container bd-grid">
             <ul>
               <li>
-                <span></span> C/C++, Python, Java, ADA, Prolog
+                <span></span> C, Rust, Python, C++
               </li>
 
               <li>
-                <span></span> RegEx, SQL (PostgreSQL, MySQL)
+                <span></span> RegEx, SQL
               </li>
 
               <li>
-                <span></span> VHDL, assembly (8086, MIPS)
+                <span></span> Verilog/VHDL, Assembly (8086, MIPS)
               </li>
-              
+
               <li>
-                <span></span> Bash, Windows Batch
+                <span></span> Linux, Zephyr, Bison
               </li>
 
             </ul>
@@ -153,24 +153,19 @@
         <section class="profile section" id="others">
           <h2 class="left-section-title">Others</h2>
           <div class="others__container bd-grid">
-            <ul>   
+            <ul>
               <li>
                 <span></span> <b>Driver's License</b>
               </li>
               <li>
-                <span></span> Deep Learning (Pytorch, tf2)
+                <span></span> Deep Learning (Tensorflow)
               </li>
               <li>
-                <span></span> Digital Image Processing
+                <span></span> Embedded Systems (Zephyr)
               </li>
               <li>
-                <span></span> Linux and Windows OS
+                <span></span> Hardware Simulation
               </li>
-              <li>
-                <span></span> Natural Language Processing (Flair, Huggingface's Transformers, tf2)
-              </li>
-
-              
             </ul>
           </div>
         </section>
@@ -185,6 +180,9 @@
               </li>
               <li>
                 <span></span> Spanish: Native
+              </li>
+              <li>
+                <span></span> Swedish: Basic
               </li>
             </ul>
           </div>
@@ -259,19 +257,49 @@
           <div class="experience__content">
             <div class="experience__time">
               <span class="experience__rounder"></span>
-              <!-- <span class="experience__line"></span> -->
             </div>
 
             <div class="experience__data bd-grid">
-              <h3 class="experience__title"><span style="color: var(--text-color);">Develop and research in NLP |</span>
+              <h3 class="experience__title"><span style="color: var(--text-color);">Simulation Software Engineer |</span>
+                SambaNova Systems | Full Time</h3>
+              <span class="experience__company"><span style="color: var(--title-color);">Stockholm, Sweden 🇸🇪</span> |
+                Jan 2024 - Present</span>
+                <br>Developed JIT compiler components for the RDU targeting ARM and x86 architectures
+                <br>Created a simulator of an abstract layer in the compiler for the RDU (Master Thesis)
+                <br>Coded hardware models from scratch to simulate chip behavior
+                <br>Fixed, supported, and maintained existing simulator models with regression, integration, and unit testing
+                <br>Ensured models are performant and correlate simulator with real hardware (memory, cycle correlation, hang debugging)
+                <br>Performance debugging: analyzed telemetry and statistics (HBM, SRAM, DRAM utilization, Compute usage, Dataflow configuration)
+                <br>Developed new framework tools to analyze executions in the simulator (telemetry analysis, chip component usage)
+            </div>
+          </div>
+
+          <div class="experience__content">
+            <div class="experience__time">
+              <span class="experience__rounder"></span>
+            </div>
+
+            <div class="experience__data bd-grid">
+              <h3 class="experience__title"><span style="color: var(--text-color);">Intern |</span>
+                SambaNova Systems | Internship</h3>
+              <span class="experience__company"><span style="color: var(--title-color);">Stockholm, Sweden 🇸🇪</span> |
+                Apr 2023 - Aug 2023</span>
+            </div>
+          </div>
+
+          <div class="experience__content">
+            <div class="experience__time">
+              <span class="experience__rounder"></span>
+            </div>
+
+            <div class="experience__data bd-grid">
+              <h3 class="experience__title"><span style="color: var(--text-color);">Software Developer |</span>
                 Oficina Nacional de Delitos de Odio | Part-time</h3>
-              <span class="experience__company"><span style="color: var(--title-color);">Ministerio del Interior, Goverment of Spain 🇪🇸</span> |
-                July 2021 - Now</span>
-                Developing a platform to geoparse, geolocalize, tabulate and deidenitfy police reports. I used RegEx and NLP-NER models to extract data from raw text in PDFs.
-
-                <br>I've used Huggingface's transformers, FlairNLP BiLSTM+CRF, BiGRU+CRF models and embeddings, programmed them in Tensorflow 2 too. ReGex rules were developed to extract regular entities and then the interface is being developed in Python. Google API for Maps and OpenStreetMaps Overpass API are used to show a map of the streets extracted, with a summary per street of near amenities.
-
-                <br>Then an UI tool was developed using PyQt5, and an installer using pyinstaller and Inno Setup. This way non-technical people can use state-of-the-art models to anonimize and extract entities easily, using the installer and the UI.
+              <span class="experience__company"><span style="color: var(--title-color);">Ministerio del Interior, Government of Spain 🇪🇸</span> |
+                Jul 2021 - Jan 2023</span>
+                Geoparsed, geolocalized, tabulated, and anonymized police reports for hate crime analysis
+                <br>Developed Named Entity Recognition pipelines using RegEx, FlairNLP, HuggingFace transformers, Tensorflow, BiLSTM+CRF, and BiGRU+CRF
+                <br>Built a desktop program using Google Places API, OpenStreetMaps Overpass API, PyQt5, pyinstaller, and Inno Setup
             </div>
           </div>
   
@@ -283,16 +311,20 @@
 
           <div class="certificate__container bd-grid">
             <div class="certificate__content">
-              <h3 class="certificate__title">Uppsala University, Sweden <span style="color: var(--text-color);">| Sep 2022 - Now</span></h3>
-              <p class="certificate__description"><b>Master's Programme in Computer Science</b>, Department of Information Technology</p>
+              <h3 class="certificate__title">Double Master's in Computer Science <span style="color: var(--text-color);">| 2022 - 2024</span></h3>
+              <p class="certificate__description">Uppsala University, Sweden (2022-2023) & National Taiwan Normal University, Taiwan (2023-2024)</p>
+              <p class="certificate__description">Maximum grade in 9/11 courses, 2/11 near maximum</p>
+              <p class="certificate__description">Verilog Project: Accelerating Neural Network in PS/PL and run on bare metal</p>
+              <p class="certificate__description">VHDL Project: Implementation of a CPU architecture in an ALTERA DE1-SOC FPGA</p>
+              <p class="certificate__description">Real-time systems in ADA | Programming Embedded Systems with Zephyr</p>
             </div>
-            
+
             <div class="certificate__content">
               <h3 class="certificate__title">Universidad Autónoma de Madrid <span
                   style="color: var(--text-color);">| Sep 2018 - Jul 2022</span></h3>
-              <p class="certificate__description"><b>Bachelor in Computer Science Engineering</b>, <i>8 honorific mentions</i> </p>
+              <p class="certificate__description"><b>Bachelor in Computer Science Engineering</b>, <i>8 honorific mentions</i>, 9.6/10 in final Bachelor Thesis, 4th of class</p>
             </div>
-            
+
             <div class="certificate__content">
               <h3 class="certificate__title">Conservatorio Arturo Soria <span
                   style="color: var(--text-color);">| 2010 - 2014</span></h3>
@@ -300,15 +332,14 @@
             </div>
 
             <div class="certificate__content">
-              <h3 class="certificate__title">Coursera <span
-                  style="color: var(--text-color);">| University of Michigan | 2020</span></h3>
+              <h3 class="certificate__title">Coursera | University of Michigan <span
+                  style="color: var(--text-color);">| 2019 - 2020</span></h3>
               <p class="certificate__description">
                 <i><ul>
-                    <li><a href="https://www.coursera.org/account/accomplishments/certificate/HEC53G7X88VR">Applied Machine Learning in Python</a></li>
-                    <li><a href="https://www.coursera.org/account/accomplishments/certificate/JZ32EGSQR25G">Applied Plotting, Charting & Data Representation in Python</a></li>
-                    <li><a href="https://www.coursera.org/account/accomplishments/certificate/YH9N8FTHP2V6">Introduction to Data Science in Python</a></li>
-                  </ul></i>  
-
+                    <li>Introduction to Data Science in Python</li>
+                    <li>Applied Plotting, Charting & Data Representation in Python</li>
+                    <li>Applied Machine Learning in Python</li>
+                  </ul></i>
               </p>
             </div>
           </div>
